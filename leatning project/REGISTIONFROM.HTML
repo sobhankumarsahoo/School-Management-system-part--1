@@ -1,0 +1,120 @@
+<Html>
+    <head> 
+    <title>Registration Page</title>
+    <style>
+    .a{
+        width: 300px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        border: solid;
+        color: skyblue;
+        border-radius: 5px;
+        background-color: rgb(5, 104, 147);
+        justify-content: center;
+        direction:FLEX;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+      
+         transform: translate(-50%, -50%);
+    }
+        body{
+            width:100%;
+            height: 100vh;
+            animation: changeBg 10s linear infinite ;
+            display: grid;
+            
+        }
+        @keyframes changeBg {
+            0%
+            {
+                background-color: blueviolet;
+            }
+            20%
+            {
+                background-color: #089688;
+            }
+            40%
+            {
+                background-color:#2196f3;
+            }
+            60%
+            {
+                background-color: #ff5722;
+            }
+            80%
+            {
+                background-color: yellowgreen;
+            }
+            100%
+            {
+                background-color: #9c27ba;
+            }
+            
+        }
+    </style>
+    </head>
+    <body bgcolor="Lightskyblue">
+    <br>
+    <br>
+    <div class="a">
+    <form>
+    
+    <label> Firstname </label> 
+    
+    <input name="test" type="text" oninput="this.value=(this.value.match('[a-zA-Z]+'))">
+    
+    <label> Middlename: </label>
+    <input name="test" type="text" oninput="this.value=(this.value.match('[a-zA-Z]+'))">
+
+    <label> Lastname: </label> 
+    <input name="test" type="text" oninput="this.value=(this.value.match('[a-zA-Z]+'))">
+
+
+    <label for="pwd">Password:</label>
+    <input type="password" id="pwd" name="pwd"><br><br>
+    <label> Re-Enter The Passward</label>
+    <input type="password" name=" Passward "/> <br> <br>
+    <label> 
+    Course :
+    </label> 
+    <select>
+    <option value="Course">Course</option>
+    <option value="BCA">BCA</option>
+    <option value="BBA">BBA</option>
+    <option value="B.Tech">B.Tech</option>
+    <option value="MBA">MBA</option>
+    <option value="MCA">MCA</option>
+    <option value="M.Tech">M.Tech</option>
+    </select>
+    
+    <br>
+    <br>
+    <label> 
+    Gender :
+    <br>
+    <input type="radio" id="age1" name="age" >
+    <label for="age1">male </label><br>
+    <input type="radio" id="age2" name="age" >
+    <label for="age2">female</label><br>  
+    <input type="radio" id="age3" name="age">
+    <label for="age3">other</label><br><br>
+    <br>
+    <br>
+    
+    <label> 
+    Phone :
+    </label>
+    <input type="text" name="country code"  value="+91" size="2"/> 
+    <input type="number" name="phone" size="10"/> <br> <br>
+    Address
+    <br>
+    <textarea cols="37" rows="6" value="address">
+    </textarea>
+    </form>
+    <button onclick="document.location='thanks.html'">SUBMIT </button>
+
+    </div>
+    </body>
+    

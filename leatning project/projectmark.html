@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+body{
+ background-image:url("https://cdn.pixabay.com/photo/2015/01/09/11/08/startup-594090_640.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ }
+
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+  margin-top: 35%;
+background-color: aqua;
+}
+body
+</style>
+</head>
+<body>
+<table class="center">
+  <tr>
+    <th>Name</th>
+    <th>Project title</th> 
+    <th> Project Mark</th>
+  </tr>
+
+<tr>
+       <td><input name="test" type="text" placeholder="enter your Name" oninput="this.value=(this.value.match('[a-zA-Z]+'))"></td>
+    <td><input name="test" type="text" placeholder="project title" ></td>
+    
+<td> <input type="number" name="mark" placeholder ="project mark" size="3"/></td>
+</tr>
+
+</table>
+<div style="text-align: center;">
+<input type ="submit" /></div>
+</body>
+</html>

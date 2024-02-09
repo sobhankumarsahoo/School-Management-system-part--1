@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+body{
+ background-image:url("https://media.istockphoto.com/id/1470160123/photo/female-teacher-reads-to-multi-cultural-elementary-school-pupils-sitting-on-floor-in-class-at.webp?b=1&s=612x612&w=0&k=20&c=wmCB_e4JEMewf1fJarftKyRpRnoxHDCnb8ZQGDJhU-k=");
+ background-repeat: no-repeat;
+ background-size: cover;
+ }
+
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+  margin-top: 20%;
+  background-color: aqua;
+}
+body
+</style>
+</head>
+<body>
+<table class="center">
+
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Mark</th>
+  </tr>
+
+<tr>
+       <td><input name="test" type="text" placeholder="enter your first name" oninput="this.value=(this.value.match('[a-zA-Z]+'))"></td>
+    <td><input name="test" type="text" placeholder="enter your last name" oninput="this.value=(this.value.match('[a-zA-Z]+'))"></td>
+    <td> <input type="number" name="mark" placeholder ="int mark" size="3"/></td>
+</tr>
+
+</table>
+<div style="text-align: center;">
+<input type ="submit" /></div>
+</body>
+</html>
